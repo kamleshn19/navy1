@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="cream">
+<h1><center>Welcome to {{title}}</center></h1>
+<li><a href="{{link}}">Home</a></li>
+{% if user.is_authenticated %}
+<li><a href="app4/logout">logout</a></li>
+{% else %}
+<li><a href="app2/signup">Sign Up</a></li>
+<li><a href="app3/login">login</a></li>
+{% endif %}
+
+</body>
+</html>

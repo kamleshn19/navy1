@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="cream">
+<h1><center>Please {{title}}</center></h1>
+<li><a href="{{link}}">Home</a></li>
+<li><a href="{{link}}">Search Previous issue</a></li>
+{% if user.is_authenticated %}
+<li><a href="app4/logout">logout</a></li>
+<li><a href="app7/logNewIssue">Create entry for new issue</a></li>
+{% endif %}
+</body>
+</html>
